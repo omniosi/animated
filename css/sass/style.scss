@@ -4,6 +4,39 @@
 	font-family: 'Roboto', Arial, sans-serif;
 	font-weight: 300;
 }
+nav{
+	padding: 10px;
+	border-bottom: solid 2px #173363;
+	color: #173363;
+	text-transform: uppercase;
+
+	section{
+		font-weight: 900;
+		display: inline-block;
+
+		img{
+			height: 20px;
+			
+			&#ologo{
+				height: 15px;
+			}
+		}
+		&#menu{
+			text-align: right;
+			float: right;
+
+			h1{
+				font-size: 16px;
+				line-height: 13px;
+				font-weight: 500;
+			}
+			h2{
+				font-size: 12px;
+				font-weight: 400;
+			}
+		}
+	}
+}
 header{
 	background: #3d73d1 url(../img/batman_75_years_logo.png) 50% 20px no-repeat;
 	background-size: 180px auto;
@@ -19,3 +52,5 @@ header{
 	// }
 
 }
+
+// desktop
