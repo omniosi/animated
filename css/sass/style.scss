@@ -5,13 +5,17 @@
 	font-weight: 300;
 }
 header{
-	background: #3d73d1 url(../img/batman_75_years_logo.png) 50% 0 no-repeat;
+	background: #3d73d1 url(../img/batman_75_years_logo.png) 50% 20px no-repeat;
+	background-size: 180px auto;
 	color: #fff;
-	padding: 200px 10px; 
+	padding: 115px 10px;
+	text-transform: uppercase;
+	text-align: center;
 
-	img{
-		// width: 100px;
-		margin:0 auto;
-		text-align: center;
-	}
+	// img{
+	// 	width: 180px;
+	// 	margin:0 auto;
+	// 	text-align: center;
+	// }
+
 }
