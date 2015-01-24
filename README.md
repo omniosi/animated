@@ -15,4 +15,5 @@ This is the third of the Digital Print series. The first can be seen here:
 and the second can be seen here: 
 [http://omnio.us/play/digital-print/si-lebron/](http://omnio.us/play/digital-print/si-lebron/)
 
-Click for the live layout here: [http://omnio.us/play/digital-print/nichols-ad/](http://omnio.us/play/digital-print/scifinow/batman/animated)
+Click for the live layout here (IN-PROGRESS): 
+[http://omnio.us/play/digital-print/scifinow/batman/animated](http://omnio.us/play/digital-print/scifinow/batman/animated)
