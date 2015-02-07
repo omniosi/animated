@@ -2,30 +2,48 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', Arial, sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  box-sizing: border-box; }
 
 nav {
-  padding: 10px;
   border-bottom: solid 2px #173363;
   color: #173363;
   text-transform: uppercase; }
   nav section {
+    padding: 10px;
     font-weight: 900;
     display: inline-block; }
     nav section img {
       height: 20px; }
       nav section img#ologo {
         height: 15px; }
-    nav section#menu {
+    nav section#title {
       text-align: right;
-      float: right; }
-      nav section#menu h1 {
+      /*float: right;*/
+      position: absolute;
+      right: 55px; }
+      nav section#title h1 {
         font-size: 16px;
         line-height: 13px;
         font-weight: 500; }
-      nav section#menu h2 {
+      nav section#title h2 {
         font-size: 12px;
         font-weight: 400; }
+    nav section#menu-icon {
+      float: right;
+      width: 54px;
+      height: 44px;
+      /*border: solid 1px #333;*/
+      /*background: #000;*/
+      background: #ACC4EC;
+      padding: 11px 13px; }
+      nav section#menu-icon .bar {
+        /*width: 100%;*/
+        background: #fff;
+        /*height: 4px;*/
+        /*margin-bottom: 6px;*/
+        height: 2px;
+        margin-bottom: 8px; }
 
 header {
   background: #3d73d1 url(../img/batman_75_years_logo.png) 50% 20px no-repeat;
@@ -34,3 +52,5 @@ header {
   padding: 115px 10px;
   text-transform: uppercase;
   text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

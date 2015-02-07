@@ -3,14 +3,15 @@
 	padding: 0;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-weight: 300;
+	box-sizing: border-box;
 }
 nav{
-	padding: 10px;
 	border-bottom: solid 2px #173363;
 	color: #173363;
 	text-transform: uppercase;
 
 	section{
+		padding: 10px;
 		font-weight: 900;
 		display: inline-block;
 
@@ -21,9 +22,11 @@ nav{
 				height: 15px;
 			}
 		}
-		&#menu{
+		&#title{
 			text-align: right;
-			float: right;
+			/*float: right;*/
+			position: absolute;
+			right: 55px;
 
 			h1{
 				font-size: 16px;
@@ -33,6 +36,24 @@ nav{
 			h2{
 				font-size: 12px;
 				font-weight: 400;
+			}
+		}
+		&#menu-icon{
+			float: right;
+			width: 54px;
+			height: 44px;
+			/*border: solid 1px #333;*/
+			/*background: #000;*/
+			background: #ACC4EC;
+			padding: 11px 13px;
+
+			.bar{
+				/*width: 100%;*/
+				background: #fff;
+				/*height: 4px;*/
+				/*margin-bottom: 6px;*/
+				height: 2px;
+				margin-bottom: 8px;
 			}
 		}
 	}
