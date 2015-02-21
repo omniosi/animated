@@ -5,9 +5,9 @@
 	font-weight: 300;
 }
 html{
-	-webkit-box-sizing: border-box;	
-	-moz-box-sizing: border-box;	
-	box-sizing: border-box;	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 *,*:before,*:after{
 	-webkit-box-sizing:inherit;
@@ -15,26 +15,42 @@ html{
 	box-sizing:inherit;
 }
 nav{
-	border-bottom: solid 2px #173363;
 	color: #173363;
 	text-transform: uppercase;
+	-webkit-box-shadow: 0 10px 10px 0 rgba(0,0,0,.35);
+	box-shadow: 0 10px 10px 0 rgba(0,0,0,.35);
+	position: fixed;
+	// display: block;
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
 
 	section{
-		padding: 10px;
+		padding: 10px 2.5%;
 		font-weight: 900;
 		display: inline-block;
 
 		img{
 			height: 20px;
-			
+
 			&#ologo{
 				height: 15px;
 			}
 		}
+		.plus{
+			font-weight: bold;
+			opacity: 0;
+		}
+		#ologo{
+			opacity:0;
+		}
 		&#title{
 			text-align: right;
 			position: absolute;
-			right: 55px;
+			// right: 54px;
+			right: 15%;
+			color: #00abee;
+			background: #173363;
 
 			h1{
 				font-size: 16px;
@@ -44,18 +60,24 @@ nav{
 			h2{
 				font-size: 12px;
 				font-weight: 400;
+				letter-spacing: 0.235em;
 			}
 		}
 		&#menu-icon{
 			float: right;
-			width: 54px;
+			// width: 54px;
+			width: 15%;
 			height: 44px;
-			border-left: solid 1px #173363;
-			background: #000;
-			padding: 11px 13px;
+			border-left: 1px solid #00abee;
+			// border-width: 1px;
+			// border-style: solid;
+			// border-color: #173363 #173363 #0d669e  #00abee;
+			background: #173363;
+			// padding: 11px 13px;
+			padding: 11px 3%;
 
 			.bar{
-				background: #fff;
+				background: #00abee;
 				height: 2px;
 				margin-bottom: 8px;
 			}
@@ -63,7 +85,7 @@ nav{
 	}
 }
 header{
-	background: #000 url(../img/title-frame_blue.jpg) no-repeat;
+	background: #000 url(../img/title-frame_blue.jpg) 50% 50% no-repeat;
 	background-size: cover;
 
 	article{
@@ -93,7 +115,7 @@ header{
 		}
 	}
 	&:hover{
-		background: url(../img/title-frame_red.jpg) no-repeat;
+		background: url(../img/title-frame_red.jpg) 50% 50% no-repeat;
 		background-size: cover;
 	}
 }
@@ -120,17 +142,25 @@ header{
 	}
 }
 
-// desktop
-@media(min-width:700px){
+@media(min-width:480px){
+	nav{
 
-	header{
+		section{
 
-		article{
-			padding: 150px 10em 60px;				
-
-			aside{
-
+			.plus,
+			#ologo{
+				opacity:1;
+			}
+			&#title{
+				right: 54px;
+			}
+			&#menu-icon{
+				width: 54px;
+				padding: 11px 13px;
 			}
 		}
 	}
 }
+
+// desktop
+@media(min-width:700px){	@import "parts/_desktop.scss";	}

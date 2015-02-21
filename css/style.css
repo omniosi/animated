@@ -15,42 +15,55 @@ html {
   box-sizing: inherit; }
 
 nav {
-  border-bottom: solid 2px #173363;
   color: #173363;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.35);
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  overflow: hidden; }
   nav section {
-    padding: 10px;
+    padding: 10px 2.5%;
     font-weight: 900;
     display: inline-block; }
     nav section img {
       height: 20px; }
       nav section img#ologo {
         height: 15px; }
+    nav section .plus {
+      font-weight: bold;
+      opacity: 0; }
+    nav section #ologo {
+      opacity: 0; }
     nav section#title {
       text-align: right;
       position: absolute;
-      right: 55px; }
+      right: 15%;
+      color: #00abee;
+      background: #173363; }
       nav section#title h1 {
         font-size: 16px;
         line-height: 13px;
         font-weight: 500; }
       nav section#title h2 {
         font-size: 12px;
-        font-weight: 400; }
+        font-weight: 400;
+        letter-spacing: 0.235em; }
     nav section#menu-icon {
       float: right;
-      width: 54px;
+      width: 15%;
       height: 44px;
-      border-left: solid 1px #173363;
-      background: #000;
-      padding: 11px 13px; }
+      border-left: 1px solid #00abee;
+      background: #173363;
+      padding: 11px 3%; }
       nav section#menu-icon .bar {
-        background: #fff;
+        background: #00abee;
         height: 2px;
         margin-bottom: 8px; }
 
 header {
-  background: #000 url(../img/title-frame_blue.jpg) no-repeat;
+  background: black url(../img/title-frame_blue.jpg) 50% 50% no-repeat;
   background-size: cover; }
   header article {
     background: rgba(0, 0, 0, 0.35) url(../img/batman_75_years_logo.png) 50% 50px no-repeat;
@@ -72,7 +85,7 @@ header {
         font-size: 0.5em;
         padding-right: 0.25em; }
   header:hover {
-    background: url(../img/title-frame_red.jpg) no-repeat;
+    background: url(../img/title-frame_red.jpg) 50% 50% no-repeat;
     background-size: cover; }
 
 .copy {
@@ -89,8 +102,19 @@ header {
     background: #eee;
     padding: 2%; }
 
+@media (min-width: 480px) {
+  nav section .plus,
+  nav section #ologo {
+    opacity: 1; }
+  nav section#title {
+    right: 54px; }
+  nav section#menu-icon {
+    width: 54px;
+    padding: 11px 13px; } }
 @media (min-width: 700px) {
+  nav section .plus,
+  nav section #ologo {
+    opacity: 1; }
+
   header article {
     padding: 150px 10em 60px; } }
-
-/*# sourceMappingURL=style.css.map */
