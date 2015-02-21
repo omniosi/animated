@@ -81,6 +81,13 @@ header {
     margin-bottom: 1em; }
     .copy p.start {
       font-weight: 700; }
+  .copy ul li {
+    list-style: none;
+    display: inline-block;
+    width: 30%;
+    margin-left: 1%;
+    background: #eee;
+    padding: 2%; }
 
 @media (min-width: 700px) {
   header article {

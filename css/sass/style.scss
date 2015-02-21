@@ -107,6 +107,17 @@ header{
 			font-weight: 700;
 		}
 	}
+	ul{
+
+		li{
+			list-style: none;
+			display: inline-block;
+			width: 30%;
+			margin-left: 1%;
+			background: #eee;
+			padding: 2%;
+		}
+	}
 }
 
 // desktop
