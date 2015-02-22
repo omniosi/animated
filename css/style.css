@@ -14,6 +14,9 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
+article, aside, section, header {
+  display: block; }
+
 nav {
   color: #173363;
   text-transform: uppercase;
@@ -64,28 +67,37 @@ nav {
         margin-bottom: 8px; }
 
 header {
-  background: #000 url(../img/title-frame_blue.jpg) 50% 50% no-repeat;
+  background: black url(../img/title-frame_blue.jpg) 50% 50% no-repeat;
   background-size: cover;
   margin-top: 44px; }
   header article {
-    background: rgba(0, 0, 0, 0.35) url(../img/batman_75_years_logo.png) 50% 50px no-repeat;
-    background-size: 150px auto;
-    color: #fff;
-    padding: 150px 130px 60px;
-    text-transform: uppercase;
-    text-align: center; }
-    header article h1 {
-      font-size: 2em;
-      margin-bottom: 20px; }
-    header article h2 {
-      font-size: 1.125em;
+    color: #fff; }
+    header article#intro {
+      background: rgba(0, 0, 0, 0.35) url(../img/batman_75_years_logo.png) 50% 50px no-repeat;
+      background-size: 150px auto;
+      padding: 150px 9% 60px;
+      text-transform: uppercase;
+      text-align: center; }
+      header article#intro h1 {
+        font-size: 2em;
+        margin-bottom: 20px; }
+      header article#intro h2 {
+        font-size: 1.125em;
+        line-height: 1.5em; }
+      header article#intro aside {
+        font-size: 0.9em;
+        margin-top: 1em; }
+        header article#intro aside span {
+          font-size: 0.5em;
+          padding-right: 0.25em; }
+    header article#start {
+      color: #6C7D84;
+      background: #000;
+      background: rgba(0, 0, 0, 0.625);
+      padding: 30px 9%;
       line-height: 1.5em; }
-    header article aside {
-      font-size: 0.9em;
-      margin-top: 1em; }
-      header article aside span {
-        font-size: 0.5em;
-        padding-right: 0.25em; }
+      header article#start p {
+        padding-bottom: 15px; }
   header:hover {
     background: url(../img/title-frame_red.jpg) 50% 50% no-repeat;
     background-size: cover; }
@@ -98,9 +110,6 @@ header {
       font-weight: 700; }
   .copy ul li {
     list-style: none;
-    display: inline-block;
-    width: 30%;
-    margin-left: 1%;
     background: #eee;
     padding: 2%; }
 
@@ -114,11 +123,10 @@ header {
     width: 54px;
     padding: 11px 13px; } }
 @media (min-width: 700px) {
-  nav section .plus,
-  nav section #ologo {
-    opacity: 1; }
-
   header article {
-    padding: 150px 10em 60px; } }
+    padding: 150px 10em 60px; }
 
-/*# sourceMappingURL=style.css.map */
+  .copy ul li {
+    display: inline-block;
+    width: 30%;
+    margin-left: 1%; } }
