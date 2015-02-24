@@ -95,7 +95,8 @@ header{
 		color: #fff;
 
 		&#intro{
-			background: rgba(0,0,0,0.35) url(../img/batman_75_years_logo.png) 50% 50px no-repeat;
+			// background: rgba(0,0,0,0.35) url(../img/batman_75_years_logo.png) 50% 50px no-repeat;
+			background: url(../img/batman_75_years_logo.png) 50% 50px no-repeat;
 			background-size: 150px auto;
 			padding: 150px 9% 60px;
 			text-transform: uppercase;
@@ -142,7 +143,7 @@ header{
 	}
 }
 .copy{
-	padding: 2em;
+	// padding: 2em;
 
 	p{
 		margin-bottom: 1em;
@@ -155,7 +156,10 @@ header{
 
 		li{
 			list-style: none;
-			background: #eee;
+			background: #c4811c;
+			border-width: 2px;
+			border-style: solid;
+			border-color: #362308;
 			padding: 2%;
 		}
 	}

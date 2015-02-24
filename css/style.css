@@ -73,7 +73,7 @@ header {
   header article {
     color: #fff; }
     header article#intro {
-      background: rgba(0, 0, 0, 0.35) url(../img/batman_75_years_logo.png) 50% 50px no-repeat;
+      background: url(../img/batman_75_years_logo.png) 50% 50px no-repeat;
       background-size: 150px auto;
       padding: 150px 9% 60px;
       text-transform: uppercase;
@@ -106,16 +106,17 @@ header {
     background: url(../img/title-frame_red.jpg) 50% 50% no-repeat;
     background-size: cover; }
 
-.copy {
-  padding: 2em; }
-  .copy p {
-    margin-bottom: 1em; }
-    .copy p.start {
-      font-weight: 700; }
-  .copy ul li {
-    list-style: none;
-    background: #eee;
-    padding: 2%; }
+.copy p {
+  margin-bottom: 1em; }
+  .copy p.start {
+    font-weight: 700; }
+.copy ul li {
+  list-style: none;
+  background: #c4811c;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #362308;
+  padding: 2%; }
 
 @media (min-width: 480px) {
   nav section .plus,
@@ -132,7 +133,6 @@ header {
 
   .copy ul li {
     display: inline-block;
-    width: 30%;
-    margin-left: 1%; } }
+    width: 30%; } }
 
 /*# sourceMappingURL=style.css.map */
