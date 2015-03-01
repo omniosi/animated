@@ -103,20 +103,29 @@ header{
 			background: url(../img/batman_75_years_logo.png) 50% 50px no-repeat;
 			background-size: 150px auto;
 			padding: 150px 9% 60px;
-			text-transform: uppercase;
+			// text-transform: uppercase;
 			text-align: center;
 
 			h1{
 				font-size: 2em;
 				margin-bottom: 20px;
+				font-family: 'Roboto Condensed', Arial, sans-serif;
+				text-transform: uppercase;
 			}
 			h2{
 				font-size: 1.125em;
 				line-height: 1.5em;
+				font-family: 'Roboto Condensed', Arial, sans-serif;
+			}
+			em,
+			i{
+				font-family: 'Roboto Condensed', Arial, sans-serif;
+				font-weight: 700;
 			}
 			aside{
 				font-size: 0.9em;
 				margin-top: 1em;
+				text-transform: uppercase;
 
 				span{
 					font-size: 0.5em;
@@ -147,7 +156,7 @@ header{
 		}
 	}
 	&:hover{
-		background: url(../img/title-frame_red.jpg) 50% 50% no-repeat;
+		background: #000 url(../img/title-frame_red.jpg) 50% 50% no-repeat;
 		background-size: cover;
 	}
 }
