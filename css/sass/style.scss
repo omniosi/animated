@@ -170,6 +170,21 @@ header{
 				border-color: #F2D4A6 #D68D1F #8F5E14 #EDC282;
 				padding: 2%;
 			}
+			.flap{
+
+				h1{
+					font-family: 'Roboto Condensed', Arial, sans-serif;
+					font-weight: 700;
+					font-size: 1.25em;
+					line-height: 0.95em;
+
+					.run{
+						font-family: 'Roboto Condensed', Arial, sans-serif;
+						font-weight: 700;
+						font-size: 0.85em;
+					}
+				}
+			}
 			p{
 				margin-bottom:0;
 				border-top-color: #362308;
@@ -183,6 +198,14 @@ header{
 				background: -ms-linear-gradient(top,  #362308 0%,#e6a84c 20%,#e6a84c 100%); /* IE10+ */
 				background: linear-gradient(to bottom,  #362308 0%,#e6a84c 20%,#e6a84c 100%); /* W3C */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#362308', endColorstr='#e6a84c',GradientType=0 ); /* IE6-8 */
+
+				.more{
+					font-family: 'Roboto Condensed', Arial, sans-serif;
+					font-size: 0.85em;
+					font-weight: 700;
+					display: block;
+					cursor: pointer;
+				}
 			}
 		}
 	}

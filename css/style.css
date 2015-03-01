@@ -124,6 +124,15 @@ header {
     border-style: solid;
     border-color: #F2D4A6 #D68D1F #8F5E14 #EDC282;
     padding: 2%; }
+  .copy ul li .flap h1 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 0.95em; }
+    .copy ul li .flap h1 .run {
+      font-family: 'Roboto Condensed', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 0.85em; }
   .copy ul li p {
     margin-bottom: 0;
     border-top-color: #362308;
@@ -145,6 +154,12 @@ header {
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#362308', endColorstr='#e6a84c',GradientType=0 );
     /* IE6-8 */ }
+    .copy ul li p .more {
+      font-family: 'Roboto Condensed', Arial, sans-serif;
+      font-size: 0.85em;
+      font-weight: 700;
+      display: block;
+      cursor: pointer; }
 
 @media (min-width: 480px) {
   nav section .plus,
@@ -161,6 +176,7 @@ header {
 
   .copy ul li {
     display: inline-block;
+    vertical-align: top;
     width: 33.3%; } }
 
 /*# sourceMappingURL=style.css.map */
