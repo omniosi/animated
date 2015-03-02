@@ -146,6 +146,7 @@ header {
       font-size: 0.85em; }
   .copy ul li p {
     margin-bottom: 0;
+    color: #6B460F;
     border-top-color: #6B460F;
     background: #E6A84C;
     /* Old browsers */
