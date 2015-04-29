@@ -8,6 +8,7 @@ html{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	background: #000;
 }
 *,*:before,*:after{
 	-webkit-box-sizing:inherit;
@@ -212,6 +213,7 @@ header{
 				background: -ms-linear-gradient(top,  #8F5E14 0%,#e6a84c 8%,#e6a84c 100%); /* IE10+ */
 				background: linear-gradient(to bottom,  #8F5E14 0%,#e6a84c 8%,#e6a84c 100%); /* W3C */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8F5E14', endColorstr='#e6a84c',GradientType=0 ); /* IE6-8 */
+				border-radius: 0 0 10px 10px;
 
 				.more{
 					font-family: 'Roboto Condensed', Arial, sans-serif;
