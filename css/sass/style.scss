@@ -96,8 +96,18 @@ header{
 	background-size: cover;
 	margin-top: 44px;
 
+	#over{
+		background: #000 url(../img/title-frame_red.jpg) 50% 50% no-repeat;
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 0;
+	}
 	article{
 		color: #fff;
+		z-index: 2;
 
 		&#intro{
 			// background: rgba(0,0,0,0.35) url(../img/batman_75_years_logo.png) 50% 50px no-repeat;
