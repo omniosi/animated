@@ -75,14 +75,15 @@ header {
   background: black url(../img/title-frame_blue.jpg) 50% 50% no-repeat;
   background-size: cover;
   margin-top: 44px; }
-  header #over {
-    background: black url(../img/title-frame_red.jpg) 50% 50% no-repeat;
-    background-size: cover;
+  header img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 0; }
+    height: auto;
+    margin-top: 44px; }
+    header img#over {
+      opacity: 0; }
   header article {
     color: #fff;
     z-index: 2; }
