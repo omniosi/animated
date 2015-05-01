@@ -11,6 +11,13 @@
 		function resize(){
 			// under.style.height = over.style.height = hdr.offsetHeight + 'px';
 			under.style.width = over.style.width = hdr.offsetWidth + 'px';
+			// if under height > hdr height then hdr height = under height else hdr height = auto
+			if ( under.offsetHeight > hdr.offsetHeight ) {
+				hdr.style.height  = under.offsetHeight + 'px';
+			} else {
+				hdr.style.height = 'auto';
+			}
+
 		}
 		function artHide(){
 			// when a belt section is clicked hide the intro articles and reveal the matching text
