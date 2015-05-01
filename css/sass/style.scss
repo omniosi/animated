@@ -196,8 +196,6 @@ header{
 			border-width: 1px;
 			border-style: solid;
 			border-color: #1F1F1F #292929 #1F1F1F #1F1F1F;
-			position: absolute;
-			bottom: 0;
 		}
 	}
 	&:hover{
@@ -343,3 +341,13 @@ header{
 
 // desktop
 @media(min-width:700px){	@import "parts/_desktop.scss";	}
+@media(min-width:1050px){
+	header{
+		article{
+			&#start{
+				position: absolute;
+				bottom: 0;
+			}
+		}
+	}
+}
