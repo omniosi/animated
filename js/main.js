@@ -14,10 +14,10 @@
 			// if under height > hdr height then hdr height = under height else hdr height = auto
 			if ( under.offsetHeight > hdr.offsetHeight ) {
 				hdr.style.height  = under.offsetHeight + 'px';
-			} else {
-				hdr.style.height = 'auto';
+			// } else {
+				// hdr.style.height = 'auto';
 			}
-
+			console.log("resize fired!");
 		}
 		function artHide(){
 			// when a belt section is clicked hide the intro articles and reveal the matching text
@@ -30,6 +30,7 @@
 			start.classList.remove('faded');
 		}
 		// match img height to header
+		window.setTimeout(resize, 500);
 		window.onresize = resize;
 		resize();
 
