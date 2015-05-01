@@ -9,6 +9,8 @@
 			under.style.width = over.style.width = hdr.offsetWidth + 'px';
 		}
 		// match img height to header
+		// window.onresize = resize();
+		window.onresize = resize;
 		resize();
 
 		// thunder animation on rollover

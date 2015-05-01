@@ -198,7 +198,7 @@ header {
         text-transform: uppercase; }
         #belt ul li .pouch .more:hover {
           color: white;
-          color: rgba(255, 255, 255, 0.7); }
+          color: rgba(255, 255, 255, 0.65); }
 
 #view {
   display: none;
@@ -208,7 +208,8 @@ header {
   left: 0;
   padding: 65px 20px 20px;
   background: rgba(0, 0, 0, 0.7);
-  color: lightgrey; }
+  color: lightgrey;
+  color: #BFB9B0; }
 
 @media (min-width: 480px) {
   nav section .plus,
