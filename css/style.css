@@ -38,6 +38,10 @@ p {
 .fade {
   animation: fadeout 1s ease-out; }
 
+.faded {
+  animation: fadeout 0.5s ease-out;
+  opacity: 0; }
+
 .hide {
   opacity: 0; }
 
@@ -222,12 +226,32 @@ header {
   z-index: 100;
   top: 0;
   left: 0;
-  padding: 65px 20px 20px;
+  padding-top: 45px;
   background: rgba(0, 0, 0, 0.7);
   color: lightgrey;
   color: #BFB9B0; }
   #view article {
-    position: relative; }
+    position: relative;
+    padding: 20px 70px 20px 30px;
+    cursor: pointer; }
+    #view article .close {
+      border: 1px solid;
+      padding: 11px 13px;
+      width: 54px;
+      height: 48px;
+      position: absolute;
+      right: 0;
+      display: inline-block; }
+      #view article .close .bar {
+        height: 2px;
+        background: #bfb9b0;
+        position: relative; }
+        #view article .close .bar.left {
+          transform: rotate(45deg);
+          top: 10px; }
+        #view article .close .bar.right {
+          transform: rotate(-45deg);
+          top: 8px; }
 
 @media (min-width: 480px) {
   nav section .plus,

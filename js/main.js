@@ -14,13 +14,13 @@
 		}
 		function artHide(){
 			// when a belt section is clicked hide the intro articles and reveal the matching text
-			intro.classList.add('hide');
-			start.classList.add('hide');
+			intro.classList.add('faded');
+			start.classList.add('faded');
 		}
 		function artShow(){
 			// when the close button is clicked hide the full text and restore intro articles
-			intro.classList.remove('hide');
-			start.classList.remove('hide');
+			intro.classList.remove('faded');
+			start.classList.remove('faded');
 		}
 		// match img height to header
 		window.onresize = resize;
@@ -40,7 +40,6 @@
 			oneF.classList.remove('off');
 			oneF.classList.add('on');
 
-			// var close = oneF.getElementsByTagName('close')[0];
 			oneF.addEventListener('click',function(){
 				oneF.classList.remove('on');
 				oneF.classList.add('off');
