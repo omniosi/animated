@@ -18,6 +18,9 @@ html {
 article, aside, section, header {
   display: block; }
 
+p {
+  padding-bottom: 15px; }
+
 @keyframes fadeout {
   from {
     opacity: 1; }
@@ -26,6 +29,9 @@ article, aside, section, header {
     opacity: 0; } }
 .fade {
   animation: fadeout 1s ease-out; }
+
+.hide {
+  opacity: 0; }
 
 nav {
   color: #173363;
@@ -135,35 +141,31 @@ header {
       border-width: 1px;
       border-style: solid;
       border-color: #1F1F1F #292929 #000 #1F1F1F; }
-      header article#start p {
-        padding-bottom: 15px; }
 
-.copy {
+#belt {
   position: relative;
   z-index: 30; }
-  .copy p {
-    margin-bottom: 1em; }
-    .copy p.start {
-      font-weight: 700; }
-  .copy ul li {
+  #belt p.start {
+    font-weight: 700; }
+  #belt ul li {
     list-style: none; }
-    .copy ul li .flap,
-    .copy ul li .pouch {
+    #belt ul li .flap,
+    #belt ul li .pouch {
       background: #E6A84C;
       border-width: 2px;
       border-style: solid;
       border-color: #F2D4A6 #D68D1F #8F5E14 #EDC282;
       padding: 2%; }
-    .copy ul li .flap h1 {
+    #belt ul li .flap h1 {
       font-family: 'Roboto Condensed', Arial, sans-serif;
       font-weight: 700;
       font-size: 1.125em;
       line-height: 0.95em; }
-      .copy ul li .flap h1 .run {
+      #belt ul li .flap h1 .run {
         font-family: 'Roboto Condensed', Arial, sans-serif;
         font-weight: 700;
         font-size: 0.75em; }
-    .copy ul li .pouch {
+    #belt ul li .pouch {
       margin-bottom: 0;
       color: #6B460F;
       border-top-color: #6B460F;
@@ -186,12 +188,27 @@ header {
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8F5E14', endColorstr='#e6a84c',GradientType=0 );
       /* IE6-8 */
       border-radius: 0 0 10px 10px; }
-      .copy ul li .pouch .more {
+      #belt ul li .pouch .more {
         font-family: 'Roboto Condensed', Arial, sans-serif;
         font-size: 0.85em;
         font-weight: 700;
         display: block;
-        cursor: pointer; }
+        cursor: pointer;
+        text-align: right;
+        text-transform: uppercase; }
+        #belt ul li .pouch .more:hover {
+          color: white;
+          color: rgba(255, 255, 255, 0.7); }
+
+#view {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  padding: 65px 20px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: lightgrey; }
 
 @media (min-width: 480px) {
   nav section .plus,
@@ -206,7 +223,7 @@ header {
   header article {
     padding: 150px 10em 60px; }
 
-  .copy ul li {
+  #belt ul li {
     display: inline-block;
     vertical-align: top;
     width: 33.3%; } }

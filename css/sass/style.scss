@@ -16,7 +16,10 @@ html{
 	box-sizing:inherit;
 }
 article, aside, section,header{display:block;}
-//animations
+p{
+	padding-bottom: 15px;
+}
+//effects
 @keyframes fadeout{
 	from{ opacity:1; }
 	to{ opacity:0; }
@@ -24,7 +27,10 @@ article, aside, section,header{display:block;}
 .fade{
 	animation: fadeout 1s ease-out;
 }
-// end animations
+.hide{
+	opacity:0;
+}
+// end effects
 nav{
 	color: #173363;
 	text-transform: uppercase;
@@ -177,7 +183,7 @@ header{
 			border-color: #1F1F1F #292929 #000 #1F1F1F;
 
 			p{
-				padding-bottom: 15px;
+				// padding-bottom: 15px;
 			}
 		}
 	}
@@ -186,13 +192,13 @@ header{
 		// background-size: cover;
 	}
 }
-.copy{
+#belt{
 	// padding: 2em;
 	position: relative;
 	z-index: 30;
 
 	p{
-		margin-bottom: 1em;
+		// margin-bottom: 1em;
 
 		&.start{
 			font-weight: 700;
@@ -248,10 +254,27 @@ header{
 					font-weight: 700;
 					display: block;
 					cursor: pointer;
+					text-align: right;
+					text-transform: uppercase;
+
+					&:hover{
+						color: white;
+						color: rgba(255,255,255,0.7);
+					}
 				}
 			}
 		}
 	}
+}
+#view{
+	display: none;
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	padding: 65px 20px 20px;
+	background: rgba(0,0,0,0.7);
+	color:	 lightgrey;
 }
 
 @media(min-width:480px){
