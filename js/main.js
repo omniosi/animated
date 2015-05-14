@@ -17,7 +17,7 @@
 			// } else {
 				// hdr.style.height = 'auto';
 			}
-			console.log("resize fired!");
+			// console.log("resize fired!");
 		}
 		function artHide(){
 			// when a belt section is clicked hide the intro articles and reveal the matching text
