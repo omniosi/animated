@@ -5,6 +5,10 @@
 		var hdr = document.getElementsByTagName('header')[0];
 		var oneB = document.getElementById('oneB');
 		var oneF = document.getElementById('oneF');
+		var twoB = document.getElementById('twoB');
+		var twoF = document.getElementById('twoF');
+		var threeB = document.getElementById('threeB');
+		var threeF = document.getElementById('threeF');
 		var intro = document.getElementById('intro');
 		var start = document.getElementById('start');
 
@@ -55,6 +59,8 @@
 			oneF.classList.add('on');
 			twoF.classList.remove('on');
 			twoF.classList.add('off');
+			threeF.classList.remove('on');
+			threeF.classList.add('off');
 
 			oneF.addEventListener('click',function(){
 				oneF.classList.remove('on');
@@ -68,10 +74,27 @@
 			twoF.classList.add('on');
 			oneF.classList.remove('on');
 			oneF.classList.add('off');
+			threeF.classList.remove('on');
+			threeF.classList.add('off');
 
 			twoF.addEventListener('click',function(){
 				twoF.classList.remove('on');
 				twoF.classList.add('off');
+				artShow();
+			});
+		});
+		threeB.addEventListener('click', function(){
+			artHide();
+			threeF.classList.remove('off');
+			threeF.classList.add('on');
+			twoF.classList.remove('on');
+			twoF.classList.add('off');
+			oneF.classList.remove('on');
+			oneF.classList.add('off');
+
+			threeF.addEventListener('click',function(){
+				threeF.classList.remove('on');
+				threeF.classList.add('off');
 				artShow();
 			});
 		});
